@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+        <script src="{% static 'network/functions.js' %}"></script>
+    </head>
+    <style>
+      .card1{
+        margin-left: 220px;
+        margin-top: 20px;
+        border: solid rgb(221, 210, 210);
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .card2{
+        margin-left: 100px;
+        margin-top: 20px;
+        border: solid rgb(221, 210, 210);
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .card3{
+        margin-left: 100px;
+        margin-top: 20px;
+        border: solid rgb(221, 210, 210);
+        display: inline-block;
+        border-radius: 5px;
+      }
+      
+    .h_container{
+      background-color: #cac7c7;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      display: inline-block;
+      width:35px;
+      height:35px;
+      text-align:center;
+      line-height:45px;
+    }
+    #heart{
+    font-size: 25px;
+    }
+    #heart:hover{
+    color:red;
+    }
+    .buttons3{
+      margin-left: 110px;
+    }
+    .price3{
+      margin-left: -1px;
+      margin-top: 20px;
+    }
+     .container{
+      width: 800px;
+     }
+    .modalfoot{
+      margin-top: 30px;
+      margin-left: 500px;
+    }
+    .card{
+      width: 900px;
+    }
+    .loob{
+      width: 1000px;
+      margin-left: 0px;
+    }
+    .col-10{
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  .hey{
+    margin-left: -100px;
+  }
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ecommerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li> --> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-primary position-relative">
+              Cart 
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                4
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Login
+    
+
+    <div class="container mt-3">
+      <h1>Login</h1>
+      <form action="">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="mt-3">
+          <button type="button" class="btn btn-outline-success">Login</button>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            type="button"
+            class="btn btn-outline-primary"
+          >
+            Register
+          </button>
+          <a href="">Forgot password?</a>
+        </div> 
+      </form>  -->
+      
+      <div class="card1" style="width: 18rem;">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c388aed-1ee9-470d-b484-19292e29b292/air-jordan-7-retro-shoes-xbNFP8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 7 Retro</h5>
+          <p class="card-text">Inspired by the shoe originally worn by MJ during the '92 season and summer of basketball,
+             the Air Jordan 7 Retro revives its championship legacy for a new generation of sneakerheads.</p>
+          <!-- Button trigger modal -->
+          <div class="price1">
+            <p><strong>Price: ₱10,895</strong> </p>
+          </div>
+          <div class = "buttons3">
+              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add to Cart 
+               </button> <div class="h_container">
+                <i id="heart" class="far fa-heart"></i>
+             </div> 
+          </div>    
+      </div>
+        </div>
+
+      <div class="card2" style="width: 18rem;">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8d666d5-f68a-4488-ae2a-a7203c3e6861/air-jordan-1-low-se-shoes-H7DD5v.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 1 Low FlyEase</h5>
+          <p class="card-text">Fresh look, familiar feel. Every time the AJ1 gets a remake, you get the classic sneaker 
+            in new colours and textures. Premium materials and accents give modern expression to an all-time favourite.
+
+          </p>
+          <!-- Button trigger modal -->
+          <div class="price2">
+            <p><strong>Price: ₱5,899</strong> </p>
+          </div>
+          <div class = "buttons3">
+            
+              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add to Cart 
+               </button> <div class="h_container">
+                <i id="heart" class="far fa-heart"></i>
+             </div> 
+          </div>    
+         </div>
+      </div>   
+
+
+       <div class="card3" style="width: 18rem;">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bab314ed-4a92-4b35-98de-279d66949a94/air-jordan-1-mid-se-craft-shoes-n5bFMW.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
+          <p class="card-text">The AJ1 Craft. Soft suede, hemp canvas and an exposed edge around the collar add tasteful texture to the kicks you know and love. And they're still perfect for everyday wear.
+          </p>
+          <!-- Button trigger modal -->
+        <div class="price3">
+          <p><strong>Price: ₱6,079</strong> </p>
+        </div>
+        <div class = "buttons3">
+          
+            <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Add to Cart 
+             </button> <div class="h_container">
+              <i id="heart" class="far fa-heart"></i>
+           </div> 
+        </div>    
+      </div>
+       </div>   
+       
+ 
+
+      
+
+      
+     
+  
+
+<!-- Modal -->
+
+           
+<!--<a href="#!" class="small text-muted">Terms of use.</a>
+<a href="#!" class="small text-muted">Privacy policy</a> -->
+
+
+<!-- Modal body -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="max-width: 70%;">
+<div class="modal-content">
+  <div class="modal-header">
+  <div class = "loob">
+    <section class="h-100" style="background-color: #eee;">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10">
+          <div class="hey">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+              <div>
+                <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
+                      class="fas fa-angle-down mt-1"></i></a></p>
+              </div>
+            </div>
+    
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://images.stockx.com/360/Air-Jordan-1-Retro-High-Yin-Yang-White-GS/Images/Air-Jordan-1-Retro-High-Yin-Yang-White-GS/Lv2/img01.jpg?auto=compress&dpr=5&updated_at=1607651324&fit=clip&fm=jpg&ixlib=react-9.1.5&q=90&w=400"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Jordan 1 Retro Yin Yang White </p>
+                    <p><span class="text-muted">Size: </span>38, 39, 41 <span class="text-muted">Color: </span>Grey, White</p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+    
+                    <input id="form1" min="0" name="quantity" value="2" type="number"
+                      class="form-control form-control-sm" />
+    
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">₱7,900</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://sneakernews.com/wp-content/uploads/2021/07/Nike-Dunk-Low-Bordeaux-Release-Info-1.jpg"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Nike Dunk Low Team Red</p>
+                    <p><span class="text-muted">Size: </span>39, 40 <span class="text-muted">Color: </span>Grey</p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+    
+                    <input id="form1" min="0" name="quantity" value="2" type="number"
+                      class="form-control form-control-sm" />
+    
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">₱6,079</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://th.bing.com/th?id=OIF.bnsRyL4WEr2Ihrw5i6PG%2fg&pid=ImgDet&rs=1"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Jordan 1 Retro Yin Yang White </p>
+                    <p><span class="text-muted">Size:40, 42,44 </span>M <span class="text-muted">Color: </span>White, Black</p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+    
+                    <input id="form1" min="0" name="quantity" value="2" type="number"
+                      class="form-control form-control-sm" />
+    
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">₱4,999</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://ns.imgix.net/product/1614346569704_AirJordan10.jpeg?fit=fill&bg=FFFFFF&trim=color&auto=format,compress&q=90"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Air Jordan 1 Low OG</p>
+                    <p><span class="text-muted">Size: </span>43 <span class="text-muted">Color: </span>Grey, White, Black</p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+    
+                    <input id="form1" min="0" name="quantity" value="2" type="number"
+                      class="form-control form-control-sm" />
+    
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">₱8,799</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card mb-4">
+              <div class="card-body p-4 d-flex flex-row">
+                <div class="form-outline flex-fill">
+                  <input type="text" id="form1" class="form-control form-control-lg" />
+                  <label class="form-label" for="form1">Voucher code</label>
+                </div>
+                <button type="button" class="btn btn-outline-warning btn-lg ms-3">Apply</button>
+              </div>
+            </div>
+    
+            <div class="card">
+              <div class="card-body">
+                <button type="button" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+              </div>
+            </div>
+          <div class = "modalfoot">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <div class="modal-footer">
+    
+
+  </div>
+</div> 
+
+
+
+
+</form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--body-->
+  </body>
+</html>
