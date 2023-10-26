@@ -92,12 +92,15 @@
   .adding{
     margin-right: 20px;
   }
+  .allcard{
+    display: flex;
+  }
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+      <div class="container-fluid justify-content-between align-items-center"> <!--added on this line-->
         <a class="navbar-brand" href="#">Ecommerce</a>
         <button
           class="navbar-toggler"
@@ -181,7 +184,8 @@
           <a href="">Forgot password?</a>
         </div> 
       </form>  -->
-      
+    <!--Cards--> 
+    <div class="allcard">   
       <div class="card1" style="width: 18rem;">
         <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c388aed-1ee9-470d-b484-19292e29b292/air-jordan-7-retro-shoes-xbNFP8.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -246,7 +250,7 @@
         </div>    
       </div>
        </div>   
-       
+      </div> 
  <!--Modal for topnav-->
    <div class="modal fade" tabindex="-1" id="product">
      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -317,6 +321,7 @@
     <div class="modal-dialog modal-lg" style="max-width: 70%;">
       <div class="modal-content">
         <div class="modal-header">
+          
          <div class = "loob">
             <section class="h-100" style="background-color: #eee;">
         <div class="container h-100 py-5">
