@@ -580,62 +580,56 @@
        </div>   
       </div> 
  <!--Modal for topnav-->
-   <div class="modal fade" tabindex="-1" id="product">
-     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-              <h4 class="modal-title">Add a product</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ <div class="modal fade" tabindex="-1" id="product">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Product Name">
+          <div class="invalid-feedback"></div>
+        </div>
+     
+        <div class="mb-3">
+          <div class="input-group">
+            <div class="input-group mt-1">
+              <span class="input-group-text">Description</span>
+              <textarea class="form-control" aria-label="Description"></textarea>
             </div>
-            <div class="modal-body">
-      
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Product Name">
-                <div class="invalid-feedback"></div>
-              </div>
-             
-              <div class="mb-3">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Description</span>
-                    </div>
-                    <input type="text" class="form-control" id="username" placeholder="" required="">
-                    <div class="invalid-feedback" style="width: 100%;"></div>
+              <div class="invalid-feedback" style="width: 100%;"></div>
+          </div>
+          <div class="mt-3">
+       
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
                 </div>
-                <div class="mt-3">
-                 
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text">$</span>
-                      </div>
-                      <input type="text" class="form-control" id="username" placeholder="" required="">
-                      <div class="invalid-feedback" style="width: 100%;"></div>
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                  </div>
-                </div>
-                  <div class="mt-3 ">
-                    <label for="username"><h5>Product image</h5></label>
-                      <div class="input-group">
-                       
-                        <div class="input-group-prepend">
-                          <span class="input-group-text "><h5>Choose File</h5></span>
-                      </div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                      <div class="invalid-feedback" style="width: 100%;">No file chosen</div>
-                  </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <input type="text" class="form-control" id="username" placeholder="" required="">
+                <div class="invalid-feedback" style="width: 100%;"></div>
+                <div class="input-group-prepend">
               
-              <button type="button" class="btn btn-success">Add product</button>
+                  <span class="input-group-text">.00</span>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="mt-3">
+            <label for="formFile" class="form-label text-dark"><h4>Product Image</h4></label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          </div>
       </div>
- </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      
+        <button type="button" class="btn btn-success">Add product</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal -->
 
            
