@@ -94,6 +94,13 @@
   }
   .allcard{
     display: flex;
+    margin-top: 8px;
+  }
+  .footer1{
+    margin-left: 280px;
+  }
+  .carousel-item {
+    height: 450px; /* Adjust the height as per your needs */
   }
     </style>
   </head>
@@ -525,7 +532,8 @@
             <p><strong>Price: ₱10,895</strong> </p>
           </div>
           <div class = "buttons3">
-              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           
+              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                 Add to Cart 
                </button> <div class="h_container">
                 <i id="heart" class="far fa-heart"></i>
@@ -534,54 +542,203 @@
       </div>
         </div>
 
-      <div class="card2" style="width: 18rem;">
-        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8d666d5-f68a-4488-ae2a-a7203c3e6861/air-jordan-1-low-se-shoes-H7DD5v.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Air Jordan 1 Low FlyEase</h5>
-          <p class="card-text">Fresh look, familiar feel. Every time the AJ1 gets a remake, you get the classic sneaker 
-            in new colours and textures. Premium materials and accents give modern expression to an all-time favourite.
+        <div class="card2" style="width: 18rem;">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8d666d5-f68a-4488-ae2a-a7203c3e6861/air-jordan-1-low-se-shoes-H7DD5v.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Air Jordan 1 Low FlyEase</h5>
+            <p class="card-text">Fresh look, familiar feel. Every time the AJ1 gets a remake, you get the classic sneaker 
+              in new colours and textures. Premium materials and accents give modern expression to an all-time favourite.
+  
+            </p>
+            <!-- Button trigger modal -->
+            <div class="price2">
+              <p><strong>Price: ₱5,899</strong> </p>
+            </div>
+            <div class = "buttons3">
+              
+                <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  Add to Cart 
+                 </button> <div class="h_container">
+                  <i id="heart" class="far fa-heart"></i>
+               </div> 
+            </div>    
+           </div>
+        </div>   
 
-          </p>
-          <!-- Button trigger modal -->
-          <div class="price2">
-            <p><strong>Price: ₱5,899</strong> </p>
+        <div class="card3" style="width: 18rem;">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bab314ed-4a92-4b35-98de-279d66949a94/air-jordan-1-mid-se-craft-shoes-n5bFMW.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
+            <p class="card-text">The AJ1 Craft. Soft suede, hemp canvas and an exposed edge around the collar add tasteful texture to the kicks you know and love. And they're still perfect for everyday wear.
+            </p>
+            <!-- Button trigger modal -->
+          <div class="price3">
+            <p><strong>Price: ₱6,079</strong> </p>
           </div>
           <div class = "buttons3">
             
-              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 Add to Cart 
                </button> <div class="h_container">
                 <i id="heart" class="far fa-heart"></i>
              </div> 
           </div>    
-         </div>
-      </div>   
-
-
-       <div class="card3" style="width: 18rem;">
-        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bab314ed-4a92-4b35-98de-279d66949a94/air-jordan-1-mid-se-craft-shoes-n5bFMW.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
-          <p class="card-text">The AJ1 Craft. Soft suede, hemp canvas and an exposed edge around the collar add tasteful texture to the kicks you know and love. And they're still perfect for everyday wear.
-          </p>
-          <!-- Button trigger modal -->
-        <div class="price3">
-          <p><strong>Price: ₱6,079</strong> </p>
         </div>
-        <div class = "buttons3">
-          
-            <button type="button" class="button btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Add to Cart 
-             </button> <div class="h_container">
-              <i id="heart" class="far fa-heart"></i>
-           </div> 
-        </div>    
+         </div>   
+        </div> 
+    <!--modal for product 1-->
+    <div class="modal fade" tabindex="-1" id="exampleModal1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Select Variation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+         
+          <div class="modal-body">
+            <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="https://outsons.com/wp-content/uploads/2019/10/010367_01.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Air Jordan 7 Retro Chambray</h4>
+                    <p>Sizes Available: 9, 10, 11, 12</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.stockx.com/images/Air-Jordan-7-Retro-Olympic-2012-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1607663474" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Air Jordan 7 Retro Olympic</h5>
+                    <p>Sizes Available: 8, 11, 13</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/012/668/136/original/182_01.jpg.jpeg?1529028123" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Air Jordan 7 French Blue</h5>
+                    <p>Sizes Available: 8, 11, 12, 13</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class = "footer1">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Add to cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-       </div>   
-      </div> 
- <!--Modal for topnav-->
- <div class="modal fade" tabindex="-1" id="product">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    </div>
+    
+  <!--modal for product 2-->
+  <div class="modal fade" tabindex="-1" id="exampleModal2">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Select Variation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+       
+        <div class="modal-body">
+          <div id="carouselExampleControlsNoTouchingggg" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://th.bing.com/th/id/OIP.7TlExKvDoStmIYpQ1CYbcQHaFS?pid=ImgDet&rs=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Jordan 1 Low Fly Ease University Gold</h4>
+                  <p>Sizes Available: 10, 11, 12</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.Al92wNO0nhuNp55-jaEmXgHaFT?pid=ImgDet&w=580&h=415&rs=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Jordan 1 Low Fly Ease Gym Red</h5>
+                  <p>Sizes Available: 9, 10, 11, 12</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingggg" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingggg" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class = "footer1">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal for product 3-->
+  <div class="modal fade" tabindex="-1" id="exampleModal3">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Select Variation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+       
+        <div class="modal-body">
+          <div id="carouselExampleControlsNoTouchingg" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://th.bing.com/th/id/OIP.kE8zZNeuMQ1tfD1F8mgcdwHaFS?pid=ImgDet&rs=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Air Jordan 1 Mid SE Craft Multicolor</h4>
+                  <p>Sizes Available: 7, 9, 10</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://s.catch.com.au/images/product/0034/34642/5f3a71cdc979f055917263.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Air Jordan 1 Mid SE Craft Black/Orange/Amarillo</h5>
+                  <p>Sizes Available: 8, 11, 13</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/8a/33/13/8a3313f9df7ff3ff0563eaa7cb210b96.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Air Jordan 1 Mid SE Craft Smoke Grey</h5>
+                  <p>Sizes Available: 8, 11, 12, 13</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingg" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingg" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class = "footer1">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   <!--Modal for topnav-->
+   <div class="modal fade" tabindex="-1" id="product">
+   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Add</h4>
@@ -837,6 +994,9 @@
 
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 <!--body-->
+
   </body>
 </html>
